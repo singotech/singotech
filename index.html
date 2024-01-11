@@ -54,20 +54,6 @@
 	<i class="fa fa-whatsapp my-float"></i>
 	</a>
 
-    <script>
-        // Function to redirect to WhatsApp when the button is clicked
-        function redirectToWhatsApp() {
-            // Replace "your_whatsapp_number" with your actual WhatsApp number, including the country code
-            var whatsappNumber = "your_whatsapp_number";
-
-            // Create the WhatsApp URL
-            var whatsappUrl = "https://api.whatsapp.com/send?phone=" + encodeURIComponent(whatsappNumber);
-
-            // Redirect the user to the WhatsApp chat
-            window.location.href = whatsappUrl;
-        }
-    </script>
-
 	<!-- Start preloader -->
 	<div id="preloader">
 		<div class="spinner" id="status">
@@ -114,7 +100,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-7">
-					<form class="quote-form">
+					<form class="quote-form" action="mailto:info@singotech.id">
 				  		<div class="row">
 				    		<div class="col-md">
 				      			<input type="text" class="form-control" placeholder="Name" required>
@@ -203,7 +189,7 @@
 							<p class="banner-heading mb-0">Technology <span>Booster</span></p>
 							<h1 class="head-one">For your business</h1>
 							<p class="banner-p">Kami mengembangkan produk perangkat keras dan perangkat lunak khusus untuk meningkatkan bisnis anda.</p>
-							<a href="#" class="started-btn animall">GET STARTED</a>
+							<a class="started-btn animall" data-scroll href="#our-services-part">GET STARTED</a>
 						</div>
 					</div>
 					<div class="col-xs-12 col-lg-6 img-box order-1 order-lg-2 fadeInRight hidden">
