@@ -20,12 +20,15 @@
     <meta property="og:title" content="Singo Teknologi Indonesia - Perusahaan Software Development & IT Konsultan di Indonesia">
     <meta property="og:description" content="Singotech merupakan perusahaan software development dan IT konsultan terbaik di Indonesia untuk berbagai industri dan sektor bisnis.">
     <meta property="og:image" content="https://singotech.id/wp-content/uploads/favicon-singo.png">
-    <meta property="og:url" content="https://singotech.id" id="og-url">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
+	<script>
+        // Set canonical URL and og:url content values dynamically based on the current page's URL
+        var currentUrl = window.location.href;
 
-    <!-- Canonical link -->
-    <link rel="canonical" href="https://singotech.id" id="canonical-url">
+        document.write('<link rel="canonical" href="' + currentUrl + '">');
+        document.write('<meta property="og:url" content="' + currentUrl + '" id="og-url">');
+    </script>
 
 	<!-- Custom style for WA button -->
 	<style>
@@ -711,10 +714,6 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/viewportchecker.js"></script>
 	<script src="js/custom.js"></script>
-	<script>
-		document.getElementById('canonical-url').setAttribute('href', currentUrl);
-		document.getElementById('og-url').setAttribute('content', currentUrl);
-	</script>
 	<script>
 		jQuery(document).ready(function(){
         	jQuery('.fadeIn,.bounceInLeft,.lightSpeedIn,.bounceInUp,.bounceInDown,.bounceInRight,.rotateInUpLeft,.zoomIn,.rubberBand,.rollIn,.rollOut,.zoomInDown,.fadeInDownBig,.fadeInUpBig,.fadeInLeftBig,.fadeInRightBig,.fadeInLeft,.fadeInRight,.fadeInDown,.flipInX,.rotateInDownRight,.rotateInDownLeft,.float_left_right_two,.fadeInUp,.flash,.fadeinleftbig,.slideInUp').addClass("hidden").
