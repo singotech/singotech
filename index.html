@@ -5,26 +5,27 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="Singotech merupakan perusahaan software development dan IT konsultan terbaik di Indonesia untuk berbagai industri dan sektor bisnis."/>
-	<meta name="keywords" content="Singo Teknologi Indonesia, buat website malang, buat aplikasi malang, software house malang"/>
+	<meta name="keywords" content="Singo Teknologi Indonesia, Buat Website Malang, Buat Aplikasi Malang, Software House Malang"/>
 	<meta name="author" content="Singotech"/>
 	<meta name="title" content="Singo Teknologi Indonesia - Perusahaan Software Development & IT Konsultan di Indonesia"/>
+	<meta name="robots" content="index, follow">
 	<link  rel="icon" href="images/fav-icon.png">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900%7CRubik:400,500,700,900&display=swap" rel="stylesheet"> -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/bizord.css">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142494086-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Singo Teknologi Indonesia - Perusahaan Software Development & IT Konsultan di Indonesia">
+    <meta property="og:description" content="Singotech merupakan perusahaan software development dan IT konsultan terbaik di Indonesia untuk berbagai industri dan sektor bisnis.">
+    <meta property="og:image" content="https://singotech.id/wp-content/uploads/favicon-singo.png">
+    <meta property="og:url" content="https://singotech.id" id="og-url">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
 
-      gtag('config', 'UA-142494086-2');
-    </script> -->
+    <!-- Canonical link -->
+    <link rel="canonical" href="https://singotech.id" id="canonical-url">
 
 	<!-- Custom style for WA button -->
 	<style>
@@ -55,12 +56,12 @@
 	</a>
 
 	<!-- Start preloader -->
-	<div id="preloader">
+	<!-- <div id="preloader">
 		<div class="spinner" id="status">
 	      <div class="double-bounce1"></div>
 	      <div class="double-bounce2"></div>
 	    </div>
-	</div>
+	</div> -->
 	<!-- End preloader -->
 
 	<!-- HEADER START -->
@@ -710,6 +711,10 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/viewportchecker.js"></script>
 	<script src="js/custom.js"></script>
+	<script>
+		document.getElementById('canonical-url').setAttribute('href', currentUrl);
+		document.getElementById('og-url').setAttribute('content', currentUrl);
+	</script>
 	<script>
 		jQuery(document).ready(function(){
         	jQuery('.fadeIn,.bounceInLeft,.lightSpeedIn,.bounceInUp,.bounceInDown,.bounceInRight,.rotateInUpLeft,.zoomIn,.rubberBand,.rollIn,.rollOut,.zoomInDown,.fadeInDownBig,.fadeInUpBig,.fadeInLeftBig,.fadeInRightBig,.fadeInLeft,.fadeInRight,.fadeInDown,.flipInX,.rotateInDownRight,.rotateInDownLeft,.float_left_right_two,.fadeInUp,.flash,.fadeinleftbig,.slideInUp').addClass("hidden").
