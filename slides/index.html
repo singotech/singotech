@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Redirecting to Google Docs</div>
+    <script>
+        let dots = 0;
+        const messageElement = document.getElementById('message');
+        const originalMessage = "Redirecting to Google Docs";
+
+        function updateMessage() {
+            dots = (dots + 1) % 4;
+            messageElement.textContent = originalMessage + '.'.repeat(dots);
+        }
+
+        setInterval(updateMessage, 500); // Update message every 500 milliseconds
+
+        setTimeout(function() {
+            window.location.href = "https://docs.google.com/presentation/d/1WS2TqwByJCyhtonZeRA0B4oO-_1stNHDr1THTrh3gAU/edit?usp=sharing";
+        }, 1000); // Redirect after 1 second
+    </script>
+</body>
+</html>
